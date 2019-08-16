@@ -28,7 +28,11 @@ def create_table():
 	</table>
 	<a href="brian">hello</a>
 	"""
-
+@app.route('/steve')
+def hello_steve():
+	return """
+        <b>hello steve</b>
+       """
 
 if __name__ == "__main__":
 	app.run(host="ec2-18-217-6-113.us-east-2.compute.amazonaws.com", port=80)
